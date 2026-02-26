@@ -18,6 +18,16 @@ on:
       - "build_files/**"
       - ".github/workflows/**"
   workflow_dispatch:
+    inputs:
+      brand_name:
+        description: "Brand Name"
+        required: false
+        default: ""
+      stream_name:
+        description: "Stream Name"
+        required: false
+        default: ""
+
 
 env:
   IMAGE_DESC: "My Customized Universal Blue Image"
